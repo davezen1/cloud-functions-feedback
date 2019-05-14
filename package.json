@@ -4,7 +4,7 @@
   "description": "Universal Feedback with Google Cloud Functions",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"We should really have tests\" "
   },
   "author": "David Hodge @davezen1",
   "license": "MIT",
