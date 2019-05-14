@@ -1,0 +1,14 @@
+{
+  "name": "universal-feedback",
+  "version": "1.0.0",
+  "description": "Universal Feedback with Google Cloud Functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Hodge @davezen1",
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/firestore": "1.2.0"
+  }
+}
