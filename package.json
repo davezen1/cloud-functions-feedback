@@ -4,7 +4,8 @@
   "description": "Universal Feedback with Google Cloud Functions",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"We should really have tests\" "
+    "test": "echo \"We should really have tests\" ",
+    "check": "ls -ltra"
   },
   "author": "David Hodge @davezen1",
   "license": "MIT",
