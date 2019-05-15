@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"We should really have tests\" ",
-    "check": "ls -ltra",
-    "check-functions": "ls -ltra functions"
+    "check": "ls -ltra"
   },
   "author": "David Hodge @davezen1",
   "license": "MIT",
