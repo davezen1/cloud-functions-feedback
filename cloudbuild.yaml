@@ -8,6 +8,9 @@ steps:
 - name: 'gcr.io/cloud-builders/npm'
   args: ['run', 'check']
   dir: 'functions/autodeploy'
+- name: 'gcr.io/cloud-builders/npm'
+  args: ['run', 'check-functions']
+  dir: 'functions/autodeploy'
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['functions', 'deploy', 'cloud-functions-universal-feedback', '--trigger-http', '--runtime', 'nodejs10', '--entry-point', 'feedback', '--region', 'us-east1', '--env-vars-file', '.env.yaml']
+  args: ['functions', 'deploy', 'cloud-functions-universal-feedback', '--env-vars-file', '.env.yaml', '--trigger-http', '--runtime', 'nodejs10', '--entry-point', 'feedback', '--region', 'us-east1']
   dir: 'functions/autodeploy'
