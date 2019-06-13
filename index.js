@@ -27,6 +27,7 @@ exports.feedback = (req, res) => {
     return firestore.collection(COLLECTION_NAME)
       .add({ created, appId, feedback, user})
       .then(doc => {
+        console.log(`Feedback Inserted ${JSON.stringify(doc)}`)
         return res.status(200).send(doc)
       }).catch(err => {
       console.error(err)
