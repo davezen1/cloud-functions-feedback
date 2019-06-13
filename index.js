@@ -2,8 +2,7 @@ const Firestore = require('@google-cloud/firestore')
 const PROJECTID = 'lucid-universal-services'
 const COLLECTION_NAME = 'feedbacks'
 const firestore = new Firestore({
-  projectId: PROJECTID,
-  timestampsInSnapshots: true
+  projectId: PROJECTID
 })
 
 exports.feedback = (req, res) => {
